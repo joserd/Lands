@@ -3,22 +3,18 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Lands.Views.LoginPage"
              BindingContext="{Binding Main, Source={StaticResource Locator}}"
-             Title="Login" >
+             Title="Lands" >
              
     <ContentPage.Content>
         <ScrollView>
-        <StackLayout Padding="10,20,10,5">
-            <Label FontAttributes="Bold"
-                FontSize="Large"
-                HorizontalOptions="Center"
-                Text="Lands" >
-             </Label>
+        <StackLayout Padding="5">
+            
                 
             <Image Source="log.png"
                    WidthRequest="200">
              </Image>
 
-            <Grid Margin="0,2">
+            <Grid Margin="10,0" >
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="2*"/>
@@ -26,7 +22,8 @@
  
                 <Label  Grid.Row="0"
                     Grid.Column="0"
-                    Text="E-mail" >
+                    Text="E-mail" 
+                        VerticalOptions="Center">
                 </Label> 
                     
 
@@ -39,7 +36,8 @@
 
                 <Label Grid.Row="1"
                     Grid.Column="0"
-                    Text="Password"  >
+                    Text="Password"  
+                       VerticalOptions="Center">
                  </Label> 
                     
 
@@ -54,6 +52,7 @@
                 </Grid>
 
              <StackLayout 
+                 Margin="10,0"
                  Orientation="Horizontal" >
 
             <Label 
@@ -74,17 +73,21 @@
                        VerticalOptions="Center">
                     
                 </Label>
-            <StackLayout Margin="20,0">
+            <StackLayout 
+                Orientation="Horizontal"
+                Margin="20,0">
                 <Button  BackgroundColor="Navy"
                 BorderRadius="20"
                 HeightRequest="40"
+                HorizontalOptions="FillAndExpand"
                 Text="Login"
                 TextColor="White">
                 </Button>
 
                 <Button  BackgroundColor="Purple" 
                 BorderRadius="20"
-                HeightRequest="40"         
+                HeightRequest="40" 
+                HorizontalOptions="FillAndExpand"
                 Text="Register"
                 TextColor="White">
                 </Button>
