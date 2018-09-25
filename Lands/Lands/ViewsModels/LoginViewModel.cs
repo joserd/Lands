@@ -44,6 +44,17 @@ namespace Lands.ViewsModels
 
         #endregion
 
+        #region
+        public ICommand LoginCommand
+
+        {
+            get;
+            set;
+
+        }
+       
+        #endregion
+
         #region Constructors
 
         public LoginViewModel()
