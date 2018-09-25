@@ -5,6 +5,7 @@ using System.Text;
 
 namespace Lands.ViewsModels
 {
+    
     using System.Windows.Input;
     class LoginViewModel
     {
@@ -53,15 +54,7 @@ namespace Lands.ViewsModels
 
         #endregion
 
-        #region Commands
-        public ICommand LoginCommand
-
-
-        {
-            get;
-            set;
-
-        }
-        #endregion
+       
+       
     }
 }
