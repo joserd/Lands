@@ -89,7 +89,7 @@
                 
                 <Button  BackgroundColor="Navy"
                 BorderRadius="20"
-                         Command="{Binding LoginCommand}"
+                Command="{Binding LoginCommand}"
                 HeightRequest="40"
                 HorizontalOptions="FillAndExpand"
                 Text="Login"
